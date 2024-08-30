@@ -14,7 +14,7 @@ class UserManage extends Component {
 
     async componentDidMount() {
         let response = await getAllUsers('ALL');
-        if(response && response.errCode ===0){
+        if(response && response.errCode === 0){
             this.setState({
                 arrUsers: response.users
             })
@@ -23,7 +23,6 @@ class UserManage extends Component {
 
 
     render() {
-        console.log('check render', this.state)
         let arrUsers = this.state.arrUsers;
         return (
             <div className="users-container">
@@ -38,10 +37,10 @@ class UserManage extends Component {
                             <th>Actions</th>
                         </tr>
                         
-                            {
-                                arrUsers && arrUsers.map((item, index) => {
+                            {arrUsers && arrUsers.map((item, index) => {
+                                console.log('Lio check map', item, index)
                                     return (
-                                        <tr>
+                                        <tr key={index}>
                                             <td>{item.email}</td>
                                             <td>{item.firstName}</td>
                                             <td>{item.lastName}</td>
