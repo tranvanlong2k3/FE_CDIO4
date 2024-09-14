@@ -6,7 +6,6 @@ import { FormattedMessage } from 'react-intl';
 import {LANGUAGES} from "../../utils";
 
 import {changeLanguageApp} from '../../store/actions'
-import { last } from 'lodash';
 
 class HomeHeader extends Component {
 
