@@ -108,7 +108,7 @@
             "nameClinic": "Clinic's name",
             "addressClinic": "Clinic's address",
             "note": "Note",
-            "speciality": "Specialty",
+            "specialty": "Specialty",
             "select-clinic": "Clinic"
         }
     }
