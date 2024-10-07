@@ -81,7 +81,7 @@ class ManageClinic extends Component {
 
         return (
             <div className='manage-clinic-container'>
-                <div className='ms-title'>Quản lý phòng khám</div>
+                <div className='ms-title'>Quản lý cơ sở y tế</div>
 
                 <div className='add-new-clinic row'>
                     <div className='col-6 form-group'>
